@@ -1,4 +1,4 @@
-# Mock MLP server for Semantic Search
+# Mock ML server for Semantic Search
 
 Mock API server that simulates the NLP server that processes documents for semantic search
 
