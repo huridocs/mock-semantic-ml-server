@@ -16,9 +16,9 @@ function processPage(page, text) {
     // strip page annotations from text
     const plainText = text.replace(/\[\[\d+\]\]/g, '');
     const sentences = plainText.split('.');
-    const results = sentences.map(sentence => ({
+    const results = sentences.map(text => ({
         page,
-        sentence,
+        text,
         score: Math.random()
     }));
     return results;
@@ -30,7 +30,6 @@ const app = express();
 app.use(bodyParser.json({ limit: '20mb' }));
 
 app.post('/process-document', (req, res) => {
-    // console.log('Document received...', req.body);
     const { contents } = req.body;
     const results = processDocument(contents);
     console.log('results', results);
