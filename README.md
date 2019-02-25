@@ -25,7 +25,7 @@ the response contains the results.
 
 ### Request Schema
 
-The request body is an object with the following properties
+The request body is an **`object`** with the following properties
 
 | Property        | Description
 ------------------|--------------
@@ -46,7 +46,7 @@ The request body is an object with the following properties
 
 ### Response Schema
 
-The response is an array of result items, where each result is an object
+The response is an **`array`** of result items, where each result is an object
 of the following properties
 
 | Property  | description
