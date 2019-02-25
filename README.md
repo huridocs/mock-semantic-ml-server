@@ -23,7 +23,7 @@ the response contains the results.
 
 ### `POST /process-document`
 
-### Request Schema
+### Request body schema
 
 The request body is an **`object`** with the following properties
 
@@ -44,9 +44,9 @@ The request body is an **`object`** with the following properties
 }
 ```
 
-### Response Schema
+### Response body schema
 
-The response is an **`array`** of result items, where each result is an object
+The response body is an **`array`** of result items, where each result is an object
 of the following properties
 
 | Property  | description
@@ -66,7 +66,7 @@ of the following properties
         "page": 1, "text": "This is the content", "score": 0.7
     },
     {
-        "page": 1, "text": "of the first page", "score: 0.4"
+        "page": 1, "text": "of the first page", "score": 0.4
     },
     {
         "page": 2, "text": "of the second page", "score": 0.3
