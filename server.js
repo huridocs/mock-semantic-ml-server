@@ -29,7 +29,7 @@ const app = express();
 
 app.use(bodyParser.json({ limit: '20mb' }));
 
-app.post('/process-document', (req, res) => {
+app.post('/semanticSearch/searchOneDoc', (req, res) => {
     const { contents } = req.body;
     const results = processDocument(contents);
     console.log('results', results);

@@ -21,7 +21,7 @@ The server runs on port `5000`.
 The server has a single endpoint that accepts a JSON request and returns a JSON response. The request contains thee contents of the document to process and
 the response contains the results.
 
-### `POST /process-document`
+### `POST /semanticSearch/searchOneDoc`
 
 ### Request body schema
 
